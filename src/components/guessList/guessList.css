@@ -1,0 +1,18 @@
+.guessList {
+  background-color: #11a8ab;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guessList ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.guessList li {
+  margin: 5px;
+}

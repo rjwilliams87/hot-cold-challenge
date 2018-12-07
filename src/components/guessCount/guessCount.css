@@ -1,0 +1,19 @@
+.count-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  background-color: #394264;
+}
+
+.count-header {
+  text-align: center;
+  background-color: #394264;
+  margin: 0;
+  padding: 20px;
+}
+
+span {
+  color: #f39c12;
+  font-size: 34px;
+  margin-left: 5px;
+}

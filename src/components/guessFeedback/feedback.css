@@ -1,0 +1,6 @@
+.feedback-container {
+  background-color: #cc324b;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
