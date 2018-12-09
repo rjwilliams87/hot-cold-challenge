@@ -4,7 +4,7 @@ import "./header.css";
 
 export default function Header(props) {
   return (
-    <header>
+    <header className="header">
       <Nav restartGame={() => props.restartGame()} />
       <h1>HOT or COLD</h1>
     </header>
