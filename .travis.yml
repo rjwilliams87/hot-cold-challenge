@@ -5,3 +5,10 @@ cache:
     - node_modules
 env:
   - CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: 0dQm/Dh1D6uOiOcS1PKkcthaKcsQ7mYuObRSbj1z4TLSeOWmpAJzuSaX1StaV6ddwvneDfDCjOzh9bcrDkAm2tkJQgDsAtmxu//7kfmCZz4vlcdN7i5TMiEDIghSS4BB4ZqI18h3aV43ohIqokgtTUAHq83vbv8fIrPOIeAGmDiunErm8/e+4mk/hvFJD4G29U89YNzXUfHfcbEqKpJG227INCxGBNN8RuGl6c2SQVaQgB07JlWPcfFVDgkf2tmMDSVtfNmV4r2loW3hny96FEeJbhczz77zBkOgFpJMweMe3nBr8MBSxtihk1AAlzwApsWNY9M9e6iMA5LtaP+YQE/HLRG0tXKRPqYf8xHGX0oRKAjcx5TEU2UYQDR8WatQRkAgepZRI9uBevU1v46XeHUmKnW1Bex1Bi9bny/Mf/IG6fWLKqOCfjoePcIXdxJL1raeZ9j5pUFj6baCIAfLQim39fR4u8kwg/JO2cXoip3SFE631Cbkcz/zoULgTsde1St1O4VRIcM1BZdKKb34/HK3uFN1WJR3opkYdIEqIzuIrn+hwmggzUK0NiDtLki25grBXFEtUkFSAzt8mzRFFd+vKEPZMpQdImmE6/VeQycnkzZQExH/WHbIuBBRD5fYUEpStInvkdmE2vSMy7SOZZ3SuJreJBJeqvQpWp2eaDc=
+  app: sheltered-bayou-52199
+  on:
+    repo: rjwilliams87/hot-cold-challenge
