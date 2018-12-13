@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
+import { restartGame } from "../../actions";
 import "./nav.css";
 
-export default function Nav(props) {
+export function Nav(props) {
   return (
     <ul className="topNav">
       <li className="topNav-li">
@@ -15,7 +17,7 @@ export default function Nav(props) {
           href="#feedback"
           aria-label="Start new game"
           onClick={() => {
-            props.restartGame();
+            props.dispatch(restartGame());
           }}
         >
           New Game
@@ -24,3 +26,5 @@ export default function Nav(props) {
     </ul>
   );
 }
+
+export default connect()(Nav);

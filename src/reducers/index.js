@@ -14,12 +14,13 @@ export const hotColdReducer = (state = initialState, action) => {
       feedback: "Make Your Guess!"
     });
   } else if (action.type === actions.ON_MAKE_GUESS) {
-    if (isNaN(action.guess)) {
+    let guess = parseInt(action.guess, 10);
+    if (isNaN(guess)) {
       return Object.assign({}, state, {
         feedback: "Please enter a valid number"
       });
     }
-    const diff = Math.abs(action.guess - state.correctAnswer);
+    const diff = Math.abs(guess - state.correctAnswer);
     let feedback;
     if (diff >= 50) {
       feedback = "Freezing";
@@ -34,7 +35,7 @@ export const hotColdReducer = (state = initialState, action) => {
     }
 
     return Object.assign({}, state, {
-      guesses: [...state.guesses, action.guess],
+      guesses: [...state.guesses, guess],
       feedback
     });
   } else {
